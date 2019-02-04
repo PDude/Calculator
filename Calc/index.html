@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <meta name="viewport"
+  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" href="img/calc.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/calc.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/toggle.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" async></script>
+</head>
+<body id="body">
+  <div id="content">
+    <header id="header">
+      <div class="header_offer">
+        <h1 id="h1">
+          Calculator
+        </h1>
+        <ul class="lang">
+          <li>
+            <a href="#ua" class="light_green" data-reload id="ua">
+              Українською
+            </a>
+          </li>
+          <li>
+            <a href="#en" data-reload id="en">
+              English
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <div class="toggle">
+          <input id="night_mode" class="toggle-input" type="checkbox"/>
+
+          <input class="hidden" type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+
+          <div class="toggle-bg"></div>
+          <div class="toggle-switch">
+            <div class="toggle-switch-figure"></div>
+            <div class="toggle-switch-figureAlt"></div>
+          </div>  
+        </div>
+      </div>
+    </header>
+    <section class="offer">
+      <div id="offer_content" class="offer_content">
+        <div class="inputs">
+          <form id="form_first">
+            <input type="tel" placeholder="Введіть перше значення" id="first_value">
+          </form>
+          <select id="select">
+            <option id="multiply" data-name="помножити на" value="*">*</option>
+            <option id="divide" data-name="поділити на" value="/">/</option>
+            <option id="add" data-name="додати" value="+">+</option>
+            <option id="minus" data-name="відняти" value="-">-</option>
+            <option id="percent" data-name="відсоток" value="%">%</option>
+            <option id="power" data-name="в степені" value="^">^</option>
+            <option id="cosine" data-name="косинус" value="cos">cos</option>
+            <option id="sine" data-name="синус" value="sin">sin</option>
+            <option id="tangent" data-name="тангенс" value="tan">tan</option>
+            <option id="root" data-name="корінь з" value="√">√</option>
+          </select>
+          <form id="form_second">
+            <input type="tel" placeholder="Введіть друге значення" id="second_value">
+          </form>
+        </div>
+        <p id="result">
+          0
+        </p>
+        <p id="result_string">
+          0   
+        </p>
+        <button id="reset">×</button>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="contacts">
+        <p class="author">
+          <span id="author">Автор</span> 
+          <a href="https://www.instagram.com/shalldon_/?hl=uk" target="_blank">
+            Dudych Paul
+          </a>
+        </p>
+        <p class="tech">
+          <span id="technologies">Технології</span>
+          <a href="https://html5book.ru/html-html5/" target="_blank">
+            HTML
+          </a><span class="comma">,</span>
+          <a href="https://html5book.ru/css-css3/" target="_blank">
+            CSS
+          </a><span class="comma">,</span>
+          <a href="https://html5book.ru/javascript-jquery/" target="_blank">
+            JavaScript
+          </a>
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
